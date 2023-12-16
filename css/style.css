@@ -231,10 +231,9 @@ body {
   display: flex;
   margin-top: 2rem;
   background-color: #222;
-  justify-content: center;
 }
 
-.content .row .map {
+.contact .row .map {
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
