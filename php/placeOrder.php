@@ -7,7 +7,7 @@ Alternatively, if you are not using **Composer**, you can download midtrans-php 
 (https://github.com/Midtrans/midtrans-php/archive/master.zip), and then require 
 the file manually.   
  */
-require_once dirname(__FILE__) . '/path/Midtrans.php';
+require_once dirname(__FILE__) . '/midtrans-php-master/Midtrans.php';
 
 //SAMPLE REQUEST START HERE
 
@@ -25,7 +25,7 @@ $params = array(
         'order_id' => rand(),
         'gross_amount' => $_POST['total'],
     ),
-    'item_details' => json_decode($_POST['items'], true),
+    // 'item_details' => json_decode($_POST['items'], true),
     'customer_details' => array(
         'first_name' => $_POST['name'],
         'email' => $_POST['email'],
